@@ -3,6 +3,7 @@ Topping Model
 
 """
 from microcosm_postgres.models import EntityMixin, Model
+
 from sqlalchemy import Column, String, Integer
 
 
