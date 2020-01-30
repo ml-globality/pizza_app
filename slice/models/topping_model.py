@@ -15,7 +15,3 @@ class Topping(EntityMixin, Model):
 
     id = Column(Integer, primary_key=True)
     name = Column(String, nullable=False, unique=True)
-
-
-    def __init__(self, name):
-        self.name = name
