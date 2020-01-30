@@ -51,7 +51,7 @@ jobs:
           name: Test code
           command: |
             sudo apt-get update
-            sudo apt-get install postgresql-client-12.1
+            sudo apt-get install postgresql-client
             sudo pip install -e .
             sudo pip install nose PyHamcrest coverage
             nosetests ./
@@ -68,7 +68,7 @@ jobs:
           command: |
             sudo pip install -e .
             sudo pip install flake8 flake8-print flake8-logging-format flake8-isort
-            flake8
+            python setup.py flake8
 
 
 
