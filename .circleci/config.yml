@@ -46,7 +46,7 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/repo
-
+      - checkout
       - run:
           name: Test code
           command: |
@@ -62,7 +62,7 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/repo
-
+      - checkout
       - run:
           name: Run Lint
           command: |
